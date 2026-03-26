@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideReady — Never Forget Gear Before a Ride</title>
+    <meta name="description" content="RideReady is an iOS app that helps cyclists prepare for every ride with customizable gear checklists, templates, and ride tracking.">
+    <meta property="og:title" content="RideReady — Never Forget Gear Before a Ride">
+    <meta property="og:description" content="Start every ride calm, confident, and prepared. RideReady helps you build gear checklists for road, gravel, indoor, and every kind of ride.">
+    <meta property="og:image" content="images/app-icon.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="images/favicon-180.png">
+    <link rel="apple-touch-icon" href="images/favicon-180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="images/app-icon.png" alt="RideReady icon" width="36" height="36">
+                <span>RideReady</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="#" class="btn-appstore-nav" aria-label="Download on the App Store">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    App Store
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg-grain"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-tag">Ride prep, simplified</p>
+                <h1>Never Forget<br>Gear Before<br>a Ride</h1>
+                <p class="hero-sub">Start every ride calm, confident, and prepared — instead of realizing too late what you forgot.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-download">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        Download for iPhone
+                    </a>
+                    <a href="#features" class="btn-ghost">See Features</a>
+                </div>
+                <p class="hero-note">Free with optional Pro upgrade</p>
+            </div>
+            <div class="hero-phone">
+                <img src="images/screenshot-ride.png" alt="RideReady — Start a new ride" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="section-inner">
+            <p class="section-tag">What it does</p>
+            <h2>Everything you need.<br>Nothing you don't.</h2>
+            <div class="features-grid">
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #FF6B2B;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3>Ride Templates</h3>
+                    <p>Create reusable checklists for road, gravel, indoor trainer, race day — whatever kind of suffering you have planned.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #34C759;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3>Active Checklist</h3>
+                    <p>Check off items as you prep. Watch the progress ring fill up so you know exactly when you're ready to roll.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #00B5D9;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Ride History</h3>
+                    <p>Completed rides stay visible so good habits stop depending on memory and start feeling automatic.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #FF6B2B;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    </div>
+                    <h3>Categories</h3>
+                    <p>Organize items by Wear, Pack, Bike, Fuel — or create your own categories to match how you think about your gear.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #00B5D9;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                    </div>
+                    <h3>iCloud Sync</h3>
+                    <p>Your templates and rides sync privately through iCloud. Everything works offline too — no account required.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="screenshots" id="screenshots">
+        <div class="section-inner">
+            <p class="section-tag">See it in action</p>
+            <h2>Designed to get out<br>of your way</h2>
+        </div>
+        <div class="screenshots-track">
+            <div class="screenshot-item reveal">
+                <img src="images/screenshot-ride.png" alt="Start a new ride" loading="lazy">
+            </div>
+            <div class="screenshot-item reveal">
+                <img src="images/screenshot-templates.png" alt="Manage ride templates" loading="lazy">
+            </div>
+            <div class="screenshot-item reveal">
+                <img src="images/screenshot-checklist.png" alt="Check off items during prep" loading="lazy">
+            </div>
+            <div class="screenshot-item reveal">
+                <img src="images/screenshot-history.png" alt="View ride history" loading="lazy">
+            </div>
+            <div class="screenshot-item reveal">
+                <img src="images/screenshot-settings.png" alt="Customize settings and unlock Pro" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro -->
+    <section class="pro" id="pro">
+        <div class="pro-inner reveal">
+            <div class="pro-badge">Pro</div>
+            <h2>Unlock Unlimited Templates</h2>
+            <p>The free version includes two ride templates — enough to get started. Upgrade to <strong>RideReady Pro</strong> to create as many templates as you need: one for every bike, every route, every race.</p>
+            <div class="pro-features">
+                <div class="pro-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Unlimited ride templates
+                </div>
+                <div class="pro-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Future premium features included
+                </div>
+                <div class="pro-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    One-time purchase
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-inner reveal">
+            <h2>Ready before you roll</h2>
+            <p>Download RideReady and start your next ride with confidence.</p>
+            <a href="#" class="btn-download btn-download-lg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download for iPhone
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="images/app-icon.png" alt="RideReady" width="40" height="40">
+                <span>RideReady</span>
+            </div>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">App Store</a>
+            </div>
+            <p class="footer-copy">&copy; 2025 RideReady. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
