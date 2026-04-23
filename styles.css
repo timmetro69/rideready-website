@@ -480,21 +480,35 @@ section h2 {
     flex: 0 0 max(24px, calc((100vw - var(--max-w)) / 2));
 }
 
-/* ---- FAQ ---- */
+/* ---- FAQ Page ---- */
 
-.faq {
-    padding: 96px 0;
+.faq-page {
+    padding: calc(var(--nav-h) + 60px) 24px 100px;
+    min-height: 100vh;
     background: linear-gradient(180deg, var(--bg) 0%, var(--bg-warm) 100%);
-    border-top: 1px solid rgba(0, 0, 0, 0.03);
 }
 
-.faq .section-inner {
-    max-width: 900px;
+.faq-content {
+    max-width: 760px;
+    margin: 0 auto;
 }
 
-.faq h2 {
-    max-width: 720px;
-    margin-bottom: 40px;
+.faq-content .section-tag {
+    margin-bottom: 12px;
+}
+
+.faq-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.faq-intro {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
 }
 
 .faq-list {
@@ -504,18 +518,20 @@ section h2 {
 }
 
 .faq-item {
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.82);
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 20px;
     padding: 24px 24px 22px;
     box-shadow: var(--shadow-sm);
 }
 
+.faq-item h2,
 .faq-item h3 {
+    font-family: var(--font);
     font-size: 1.05rem;
     line-height: 1.35;
     letter-spacing: -0.01em;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .faq-item p {
@@ -855,12 +871,12 @@ section h2 {
         height: 440px;
     }
 
-    .faq {
-        padding: 72px 0;
+    .faq-page {
+        padding: calc(var(--nav-h) + 40px) 24px 72px;
     }
 
-    .faq h2 {
-        margin-bottom: 32px;
+    .faq-intro {
+        margin-bottom: 24px;
     }
 
     .faq-item {
