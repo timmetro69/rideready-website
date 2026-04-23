@@ -73,4 +73,44 @@
             }
         });
     });
+
+    // CTA analytics tracking
+    document.querySelectorAll('[data-cta-type][data-cta-location]').forEach((link) => {
+        link.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            const ctaType = this.getAttribute('data-cta-type');
+            const location = this.getAttribute('data-cta-location');
+
+            if (!href || !ctaType || !location) return;
+            if (e.defaultPrevented) return;
+            if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            if (this.target && this.target !== '_self') return;
+
+            e.preventDefault();
+
+            const navigate = () => {
+                window.location.href = href;
+            };
+
+            if (typeof window.gtag !== 'function') {
+                navigate();
+                return;
+            }
+
+            let navigated = false;
+            const safeNavigate = () => {
+                if (navigated) return;
+                navigated = true;
+                navigate();
+            };
+
+            window.gtag('event', 'cta_click', {
+                cta_type: ctaType,
+                location,
+                event_callback: safeNavigate
+            });
+
+            window.setTimeout(safeNavigate, 150);
+        });
+    });
 })();
