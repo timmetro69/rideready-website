@@ -12,11 +12,11 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RideReady — Never Forget Gear Before a Ride</title>
-    <meta name="description" content="RideReady is an iOS app that helps cyclists run through their ride setup in seconds. Build reusable setups for every ride type and never forget gear before a ride.">
+    <title>RideReady: Never Forget Gear, Before or After the Ride</title>
+    <meta name="description" content="RideReady is an iOS app for the whole ride: pre-ride checklists, a gear library, and Wrap Up after the ride so your gear is charged, clean, and ready for the next one. Free, with a one-time Pro unlock.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="RideReady — Never Forget Gear Before a Ride">
-    <meta property="og:description" content="Run through your ride setup in seconds. RideReady helps cyclists build reusable setups for every ride type — road, gravel, trainer, race day, and more.">
+    <meta property="og:title" content="RideReady: Never Forget Gear, Before or After the Ride">
+    <meta property="og:description" content="Prep, ride, wrap up, ready again. RideReady pairs fast pre-ride checklists with a post-ride Wrap Up, so your gear is ready for the next ride.">
     <meta property="og:image" content="https://ridereadycycling.com/images/app-icon.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ridereadycycling.com/">
@@ -40,17 +40,27 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MobileApplication",
+      "@type": "SoftwareApplication",
       "name": "RideReady",
-      "description": "RideReady is an iOS app that helps cyclists run through their ride setup in seconds. Build reusable setups for every ride type and never forget gear before a ride.",
+      "description": "RideReady is an iOS app for the whole ride: pre-ride checklists, a reusable gear library, and a post-ride Wrap Up (charge, clean, dry, store, inspect) so gear is ready for the next ride.",
       "url": "https://ridereadycycling.com/",
       "applicationCategory": "SportsApplication",
       "operatingSystem": "iOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
+      "softwareVersion": "2.0",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "RideReady Free",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "RideReady Pro (one-time purchase)",
+          "price": "6.99",
+          "priceCurrency": "USD"
+        }
+      ],
       "installUrl": "https://apps.apple.com/us/app/rideready-cycling-ride-prep/id6760448667",
       "image": "https://ridereadycycling.com/images/app-icon.png",
       "publisher": {
@@ -58,10 +68,13 @@
         "name": "JGLZ Ventures LLC"
       },
       "featureList": [
-        "Reusable ride setups for road, gravel, trainer, race day, and travel",
+        "Unlimited reusable ride setups for road, gravel, trainer, race day, and travel",
         "Active checklist with progress ring",
+        "Item Library: save gear once, with a photo or icon, and reuse it on every setup",
+        "Wrap Up: a post-ride care list (charge, clean, dry, store, inspect) built from the gear you used",
+        "Pre-ride alerts for unfinished gear care from your last ride",
+        "Return to Ready (Pro): an optional prompt to open Wrap Up when you return near your ride start",
         "Ride history and routine building",
-        "Gear categories: Wear, Pack, Bike, Fuel",
         "iCloud sync",
         "Works offline, no account required"
       ]
@@ -79,6 +92,7 @@
             </a>
             <div class="nav-links">
                 <a href="#features">Features</a>
+                <a href="#pro">Pricing</a>
                 <a href="#screenshots">Screenshots</a>
                 <a href="guides/">Guides</a>
                 <a href="faq.html">FAQ</a>
@@ -99,9 +113,9 @@
         <div class="hero-bg-grain"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <p class="hero-tag">Your ride routine, built for cycling</p>
-                <h1>Never Forget<br>Gear Before<br>a Ride</h1>
-                <p class="hero-sub">Run through your ride setup in seconds — and roll out knowing you're ready.</p>
+                <p class="hero-tag">New in 2.0: Item Library and Wrap Up</p>
+                <h1>Never Forget Gear.<br>Before or After<br>the Ride.</h1>
+                <p class="hero-sub">Run through your ride setup in seconds, roll out knowing you are ready, then close the loop when you get home: charge, clean, dry, store, inspect, so the next ride starts ready too.</p>
                 <div class="hero-actions">
                     <a href="https://apps.apple.com/us/app/rideready-cycling-ride-prep/id6760448667" class="btn-download" data-cta-type="download" data-cta-location="hero">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -109,10 +123,10 @@
                     </a>
                     <a href="#features" class="btn-ghost">See Features</a>
                 </div>
-                <p class="hero-note">Free with optional Pro upgrade</p>
+                <p class="hero-note">Free, with an optional one-time Pro upgrade. No subscription.</p>
             </div>
             <div class="hero-phone">
-                <img src="images/screenshot-ride.png" alt="RideReady — Start a new ride" loading="eager">
+                <img src="images/screenshot-ride.png" alt="RideReady, Start a new ride" loading="eager">
             </div>
         </div>
     </section>
@@ -121,7 +135,39 @@
     <section class="pain">
         <div class="section-inner pain-inner reveal">
             <h2>Forgetting one thing can ruin a ride.</h2>
-            <p class="pain-detail">A light. A strap. Nutrition. Tools.<br>RideReady gives you a fast way to run through your setup — so you don't miss anything before you roll out.</p>
+            <p class="pain-detail">A light. A strap. Nutrition. Tools.<br>Or the light you never charged after the last ride. RideReady covers both ends of the ride, so nothing gets missed before you roll out, and nothing gets neglected when you get back.</p>
+        </div>
+    </section>
+
+
+    <!-- The Full Circle -->
+    <section class="features" id="loop">
+        <div class="section-inner">
+            <p class="section-tag">The full circle</p>
+            <h2>Prep. Ride. Wrap up.<br>Ready again.</h2>
+            <div class="features-grid">
+
+                <div class="feature-card reveal">
+                    <h3>1. Prep</h3>
+                    <p>Run your ride setup checklist. Anything left over from last time, like a light that never got charged, shows up first, while there is still time to fix it.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <h3>2. Ride</h3>
+                    <p>RideReady remembers which gear you actually used, not just what you meant to pack.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <h3>3. Wrap up</h3>
+                    <p>After the ride, you get a short care list built from that gear: charge, clean, dry, store, inspect.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <h3>4. Ready again</h3>
+                    <p>Work the list and everything is ready for the next ride. Skip something and it waits for you at the next prep, not in the middle of nowhere.</p>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -137,7 +183,7 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                     </div>
                     <h3>Ride Setups</h3>
-                    <p>Build a setup for every kind of ride — road, gravel, trainer, race day, travel, or a quick spin from home. Build once, reuse every time.</p>
+                    <p>Build a setup for every kind of ride: road, gravel, trainer, race day, travel, or a quick spin from home. Build once, reuse every time. Setups are unlimited, free.</p>
                 </div>
 
                 <div class="feature-card reveal">
@@ -145,23 +191,23 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     </div>
                     <h3>Active Checklist</h3>
-                    <p>Work through your prep fast. The progress ring fills as you go — so you can see at a glance when you're ready to roll out.</p>
+                    <p>Work through your prep fast. The progress ring fills as you go, so you can see at a glance when you are ready to roll out.</p>
                 </div>
 
                 <div class="feature-card reveal">
                     <div class="feature-icon" style="--accent: #00B5D9;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
-                    <h3>Your Riding Routine</h3>
-                    <p>Every completed ride builds your routine over time. Good habits stop depending on memory and start feeling automatic.</p>
+                    <h3>Item Library</h3>
+                    <p>Save each piece of gear once, with a photo or an icon, and the care it needs after a ride. Reuse it on every setup instead of retyping the same items forever.</p>
                 </div>
 
                 <div class="feature-card reveal">
                     <div class="feature-icon" style="--accent: #FF6B2B;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
                     </div>
-                    <h3>Categories</h3>
-                    <p>Organize items by Wear, Pack, Bike, Fuel — or create your own categories to match how you think about your gear.</p>
+                    <h3>Wrap Up</h3>
+                    <p>When the ride ends, RideReady builds your post-ride care list from the gear you used. A minute of charging, washing, and putting things back, and nothing quietly goes flat, sour, or missing.</p>
                 </div>
 
                 <div class="feature-card reveal">
@@ -169,7 +215,23 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
                     </div>
                     <h3>iCloud Sync</h3>
-                    <p>Your ride setups sync privately through iCloud. Everything works offline too — no account required.</p>
+                    <p>Your ride setups, gear library, and history sync privately through iCloud. Everything works offline too, and no account is required.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #FF6B2B;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <h3>Heads Up Before You Roll</h3>
+                    <p>Unfinished care from your last ride surfaces during prep, while you can still do something about it. A soft warning, never a lockout. You can always proceed anyway.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="--accent: #00B5D9;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Return to Ready (Pro)</h3>
+                    <p>Optional, and off by default. RideReady can notice when you are back near where your ride started and suggest opening Wrap Up. It stores no route, and you can turn it off at any time.</p>
                 </div>
 
             </div>
@@ -205,7 +267,7 @@
     <section class="notes" id="why-rideready">
         <div class="notes-inner reveal">
             <h2>Why not just use Notes?</h2>
-            <p class="notes-intro">Because ride prep isn't just a list — it's a routine.</p>
+            <p class="notes-intro">Because ride prep is not just a list. It is a routine, before and after the ride.</p>
             <ul class="notes-list">
                 <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -213,15 +275,19 @@
                 </li>
                 <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    Track progress as you prep — not just a static list
+                    Track progress as you prep, not just a static list
                 </li>
                 <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    Different setups for different rides — gravel, trainer, race day, travel
+                    Different setups for different rides, gravel, trainer, race day, travel
                 </li>
                 <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                     Build habits that make preparation feel automatic
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Wrap up after the ride, so your gear is charged, clean, and ready next time
                 </li>
             </ul>
             <p class="notes-kicker">Notes can hold a list. RideReady is built for the ride.</p>
@@ -231,21 +297,21 @@
     <!-- Pro -->
     <section class="pro" id="pro">
         <div class="pro-inner reveal">
-            <div class="pro-badge">Pro</div>
-            <h2>One Setup for Every Ride</h2>
-            <p>The free version includes two ride setups — enough to get started. Upgrade to <strong>RideReady Pro</strong> to create as many as you need: one for every bike, every route, every race.</p>
+            <div class="pro-badge">Pricing</div>
+            <h2>Free does the whole loop</h2>
+            <p>The free app includes <strong>unlimited ride setups</strong>, the full prep and Wrap Up workflow, and an Item Library for up to <strong>3 active gear items</strong>. <strong>RideReady Pro</strong> is a one-time purchase that raises the gear library to unlimited and adds Return to Ready prompts.</p>
             <div class="pro-features">
                 <div class="pro-feature">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    Unlimited ride setups
+                    Unlimited gear items
                 </div>
                 <div class="pro-feature">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    Future premium features included
+                    Return to Ready prompts
                 </div>
                 <div class="pro-feature">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                    One-time purchase
+                    One-time purchase of $6.99, no subscription
                 </div>
             </div>
         </div>
@@ -254,8 +320,8 @@
     <!-- CTA -->
     <section class="cta">
         <div class="cta-inner reveal">
-            <h2>Be ready before every ride</h2>
-            <p>Stop guessing. Start every ride knowing you're prepared.</p>
+            <h2>Start ready. Finish ready.</h2>
+            <p>Stop guessing, before the ride and after it. Download RideReady and close the loop on every ride.</p>
             <a href="https://apps.apple.com/us/app/rideready-cycling-ride-prep/id6760448667" class="btn-download btn-download-lg" data-cta-type="download" data-cta-location="cta_section">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Download for iPhone
@@ -276,6 +342,7 @@
                 <a href="guides/">Guides</a>
                 <a href="faq.html">FAQ</a>
                 <a href="privacy.html">Privacy Policy</a>
+                <a href="https://www.instagram.com/ridereadycycling" data-cta-type="social" data-cta-location="footer">Instagram</a>
                 <a href="https://apps.apple.com/us/app/rideready-cycling-ride-prep/id6760448667" data-cta-type="app_store" data-cta-location="footer">App Store</a>
             </div>
             <p class="footer-copy">&copy; 2026 JGLZ Ventures LLC. All rights reserved.</p>
