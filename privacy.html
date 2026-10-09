@@ -12,9 +12,9 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — RideReady</title>
-    <meta name="description" content="RideReady privacy policy. We collect only anonymous analytics and crash data to improve the app. No personal information is ever collected.">
-    <meta property="og:title" content="Privacy Policy — RideReady">
+    <title>Privacy Policy: RideReady</title>
+    <meta name="description" content="RideReady privacy policy. No personal information is collected. Location is used on-device only, and only if you enable the optional Return to Ready feature. Anonymous analytics and crash data help improve the app.">
+    <meta property="og:title" content="Privacy Policy: RideReady">
     <meta property="og:description" content="RideReady collects only anonymous analytics and crash reports. No personal data is ever collected or shared.">
     <meta property="og:image" content="https://ridereadycycling.com/images/app-icon.png">
     <meta property="og:type" content="website">
@@ -58,15 +58,15 @@
         <div class="privacy-content">
             <p class="section-tag">Privacy</p>
             <h1>Privacy Policy</h1>
-            <p class="privacy-updated">Last updated: April 22, 2026</p>
+            <p class="privacy-updated">Last updated: October 8, 2026</p>
 
             <h2>The Short Version</h2>
-            <p>RideReady does not collect any personal information. Your ride templates, checklists, and history belong entirely to you. The app uses Firebase Analytics and Firebase Crashlytics to collect anonymous, non-identifiable usage and crash data solely to improve app quality.</p>
+            <p>RideReady does not collect any personal information. Your ride templates, gear library, checklists, and history belong entirely to you. The app uses Firebase Analytics and Firebase Crashlytics to collect anonymous, non-identifiable usage and crash data solely to improve app quality. Version 2.0 adds one optional, on-device use of location, described in the Location section below: it is never collected, stored as a route, or sent to us.</p>
 
             <hr class="privacy-divider">
 
             <h2>Data Storage</h2>
-            <p>All data you create in RideReady — including ride templates, checklist items, categories, and ride history — is stored in one of two places:</p>
+            <p>All data you create in RideReady, including ride templates, checklist items, categories, gear items in your Item Library (including any item photos you add), post-ride Wrap Up actions, and ride history, is stored in one of two places:</p>
             <ul>
                 <li>Locally on your device</li>
                 <li>In your personal, private iCloud account (if you choose to enable iCloud sync)</li>
@@ -77,18 +77,29 @@
             <p>RideReady uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>, both provided by Google, to understand how the app is used and to detect and fix crashes.</p>
             <p>These services collect:</p>
             <ul>
-                <li>Anonymous app usage events (e.g., app opened, tabs visited, rides started or completed)</li>
+                <li>Anonymous app usage events (e.g., app opened, tabs visited, rides started or completed, wrap ups completed)</li>
                 <li>Anonymous crash reports including device model, OS version, and app state at the time of the crash</li>
-                <li>A pseudonymous, per-install Firebase Installation ID — this is a randomly generated identifier that is not linked to your name, Apple ID, or any other personal identity</li>
+                <li>A pseudonymous, per-install Firebase Installation ID, this is a randomly generated identifier that is not linked to your name, Apple ID, or any other personal identity</li>
             </ul>
             <p>No personal information is attached to any of these events or reports. The data is used solely to improve RideReady's stability and user experience and is never used for advertising or sold to third parties.</p>
             <p>This data is processed by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+
+            <h2>Location and Return to Ready</h2>
+            <p>Return to Ready is an optional RideReady Pro feature. It is <strong>off by default</strong> and does nothing unless you turn it on in Settings and grant iOS location permission.</p>
+            <p>When it is on, RideReady uses your location while a ride is armed to monitor a small region around the point where the ride started (200 meters by default, adjustable in Settings). When the app detects that you have left that region and later returned to it, after a minimum time away (15 minutes by default), it suggests opening Wrap Up.</p>
+            <ul>
+                <li>Location processing happens <strong>on your device</strong>, using iOS region monitoring.</li>
+                <li>RideReady <strong>does not record your route</strong>, does not store your coordinates, and does not transmit location data to the developer or any third party.</li>
+                <li>Analytics events for this feature record only that events occurred (for example, that a return prompt was shown or acted on). They contain <strong>no coordinates and no location data</strong>.</li>
+                <li>You can turn Return to Ready off at any time in RideReady Settings, or revoke location permission in iOS Settings. The rest of the app works fully without location access.</li>
+            </ul>
+            <p>If you never enable Return to Ready, RideReady does not request or use location at all.</p>
 
             <h2>What We Do Not Collect</h2>
             <p>RideReady never collects:</p>
             <ul>
                 <li>Your name, email address, or any contact information</li>
-                <li>Location data</li>
+                <li>Your routes, ride tracks, or coordinates. RideReady does not record where you ride, and location is never collected or stored (see Location and Return to Ready above)</li>
                 <li>Health or fitness data</li>
                 <li>The content of your ride templates or checklists</li>
                 <li>Any information that can identify you personally</li>
@@ -108,7 +119,7 @@
             <p>RideReady does not collect any personal information from any user, including children under 13. The anonymous analytics described above do not include any personally identifiable information.</p>
 
             <h2>Changes to This Policy</h2>
-            <p>If this privacy policy changes in the future, the updated version will be posted on this page with a revised date. Because RideReady does not collect contact information, we cannot notify users directly — please check this page periodically.</p>
+            <p>If this privacy policy changes in the future, the updated version will be posted on this page with a revised date. Because RideReady does not collect contact information, we cannot notify users directly, please check this page periodically.</p>
 
             <hr class="privacy-divider">
 
@@ -131,6 +142,7 @@
                 <a href="guides/">Guides</a>
                 <a href="faq.html">FAQ</a>
                 <a href="privacy.html">Privacy Policy</a>
+                <a href="https://www.instagram.com/ridereadycycling" data-cta-type="social" data-cta-location="footer">Instagram</a>
                 <a href="https://apps.apple.com/us/app/rideready-cycling-ride-prep/id6760448667" data-cta-type="app_store" data-cta-location="footer">App Store</a>
             </div>
             <p class="footer-copy">&copy; 2026 JGLZ Ventures LLC. All rights reserved.</p>
